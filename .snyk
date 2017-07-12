@@ -5,4 +5,4 @@ ignore: {}
 patch:
   'npm:ms:20170412':
     - compression > debug > ms:
-        patched: '2017-07-05T12:10:23.398Z'
+        patched: '2017-07-05T12:10:30.406Z'
