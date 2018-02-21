@@ -51,7 +51,9 @@
   },
   "pre-commit": "lint:staged",
   "babel": {
-    "plugins": [ "styled-components" ],
+    "plugins": [
+      "styled-components"
+    ],
     "presets": [
       [
         "env",
@@ -64,7 +66,9 @@
     ],
     "env": {
       "production": {
-        "only": [ "app" ],
+        "only": [
+          "app"
+        ],
         "plugins": [
           "transform-react-remove-prop-types",
           "transform-react-constant-elements",
@@ -72,7 +76,10 @@
         ]
       },
       "test": {
-        "plugins": [ "transform-es2015-modules-commonjs", "dynamic-import-node" ]
+        "plugins": [
+          "transform-es2015-modules-commonjs",
+          "dynamic-import-node"
+        ]
       }
     }
   },
@@ -85,7 +92,11 @@
       "jest": true,
       "es6": true
     },
-    "plugins": [ "redux-saga", "react", "jsx-a11y" ],
+    "plugins": [
+      "redux-saga",
+      "react",
+      "jsx-a11y"
+    ],
     "parserOptions": {
       "ecmaVersion": 6,
       "sourceType": "module",
@@ -94,10 +105,19 @@
       }
     },
     "rules": {
-      "arrow-parens": [ "error", "always" ],
-      "arrow-body-style": [ 2, "as-needed" ],
+      "arrow-parens": [
+        "error",
+        "always"
+      ],
+      "arrow-body-style": [
+        2,
+        "as-needed"
+      ],
       "class-methods-use-this": 0,
-      "comma-dangle": [ 2, "always-multiline" ],
+      "comma-dangle": [
+        2,
+        "always-multiline"
+      ],
       "import/imports-first": 0,
       "import/newline-after-import": 0,
       "import/no-dynamic-require": 0,
@@ -127,7 +147,10 @@
       "no-use-before-define": 0,
       "prefer-template": 2,
       "react/forbid-prop-types": 0,
-      "react/jsx-first-prop-new-line": [ 2, "multiline" ],
+      "react/jsx-first-prop-new-line": [
+        2,
+        "multiline"
+      ],
       "react/jsx-filename-extension": 0,
       "react/jsx-no-target-blank": 0,
       "react/require-default-props": 0,
@@ -147,8 +170,20 @@
   },
   "dllPlugin": {
     "path": "node_modules/react-boilerplate-dlls",
-    "exclude": [ "chalk", "compression", "cross-env", "express", "ip", "minimist", "sanitize.css" ],
-    "include": [ "core-js", "lodash", "eventsource-polyfill" ]
+    "exclude": [
+      "chalk",
+      "compression",
+      "cross-env",
+      "express",
+      "ip",
+      "minimist",
+      "sanitize.css"
+    ],
+    "include": [
+      "core-js",
+      "lodash",
+      "eventsource-polyfill"
+    ]
   },
   "jest": {
     "collectCoverageFrom": [
@@ -167,7 +202,10 @@
         "lines": 98
       }
     },
-    "moduleDirectories": [ "node_modules", "app" ],
+    "moduleDirectories": [
+      "node_modules",
+      "app"
+    ],
     "moduleNameMapper": {
       ".*\\.(css|less|styl|scss|sass)$": "<rootDir>/internals/mocks/cssModule.js",
       ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/internals/mocks/image.js"
@@ -188,7 +226,7 @@
     "intl": "1.2.5",
     "invariant": "2.2.2",
     "ip": "1.1.5",
-    "lodash": "4.17.4",
+    "lodash": "4.17.5",
     "minimist": "1.2.0",
     "prop-types": "15.5.10",
     "react": "15.6.1",
